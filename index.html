@@ -5,40 +5,111 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
     <title>Smart Control</title>
 </head>
 
 <body>
 
-    <img src="assets/images/download.png" alt="imagem logo">
+    <!-- Logo -->
+    <!--<div class="logo">
+        <img src="assets/images/download (1).png" alt="imagem logo">
+    </div>-->
 
-    <h1>BEM VINDO!</h1>
+    <div class="container">
 
-    <form action="dashboard.html" method="get">
+        <div class="card">
 
-        <label for="nome_completo">Nome Completo</label>
-        <input type="text" name="nome_completo" id="nome_completo" placeholder="67" required><br><br>
+            <h1>BEM VINDO!!</h1>
 
-        <label for="e_mail">E-mail</label>
-        <input type="email" name="e_mail" id="e_mail" placeholder="67" required><br><br>
+            <form action="dashboard.html" method="get">
 
-        <label for="senha">Senha</label>
-        <input type="password" name="senha" id="senha" placeholder="67" minlength="8" required><br><br>
+                <div class="input-group">
 
-        <input type="checkbox" name="lembrar" id="lembrar">
-        <label for="lembrar">Lembrar-me</label><br><br>
+                    <label for="e_mail">E-mail</label>
+                    <br>
 
-        <button type="submit" name="login">Entrar</button><br><br>
+                    <input 
+                        type="email" 
+                        name="e_mail" 
+                        id="e_mail" 
+                        placeholder="Digite seu E-mail aqui" 
+                        required
+                    >
 
-    </form>
+                    <br><br>
 
-    <form action="cadastro.html" method="get">
-        <button type="submit" name="cadastro">Não tenho cadastro</button>
-    </form>
+                    <label for="senha">Senha</label>
+                    <br>
 
+                    <input 
+                        type="password" 
+                        name="senha" 
+                        id="senha" 
+                        placeholder="Digite sua senha aqui" 
+                        minlength="8" 
+                        required
+                    >
+
+                    <br><br>
+
+                </div>
+
+                <div class="lembrar">
+
+                    <input 
+                        type="checkbox" 
+                        name="lembrar" 
+                        id="lembrar"
+                    >
+
+                    <label for="lembrar">Lembrar-me</label>
+
+                    <br><br>
+
+                </div>
+
+                <button type="submit" name="login">
+                    Entrar
+                </button>
+
+                <br><br>
+
+            </form>
+
+            <div class="rodape_login">
+
+                <a href="cadastro.html">
+                    Não tenho cadastro
+                </a>
+
+                <a href="esqueci_senha.html">
+                    Esqueci minha senha
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Mapa -->
+    <!--
     <footer>
-        <iframe src="https://www.google.com/maps/embed?pb=..."></iframe>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3707.102854440699!2d-43.427614924521436!3d-21.69872999581662"
+            width="600"
+            height="450"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="strict-origin-when-cross-origin">
+        </iframe>
     </footer>
+    -->
 
 </body>
+
 </html>
