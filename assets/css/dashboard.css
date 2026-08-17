@@ -1,87 +1,118 @@
 *{
-    margin:0;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+
+
 }
+
+
+
 
 body{
-    background-color: #354220;
-
+    background-color: #202A42;
+   
+   
 }
+
 
 .container {
     gap: 30px;
     display: flex;
     justify-content: center;
     margin: 100;
+   
+
+
 }
 
-.local{
+
+.local {
     justify-content: end;
     right: 0;
     display: flex;
     margin: 20px;
     padding: 20px;
-
 }
 
-.logo{
+
+.logo {
     width: 40px;
     height: 40px;
     flex: 1;
     display: flex;
 }
 
+
 [src="assets/images/cardapio.png"] {
     position: absolute;
     left: 30px;
+    width: 80px;
     height: 50px;
-
+   
+   
+   
 }
+
+
+
+
+
 
 .cabecalho {
     display: flex;
-    background-color: #10abe9;
+    background-color: #7281B7;
     height: 120px;
     position: relative;
     align-items: center;
     justify-content: center;
-
 }
+
 
 h1 {
     margin: 0;
     font-size: 36px;
     color:white;
-
 }
 
-.tipos {
 
+
+
+
+
+.tipos {
+   
     height: 500px;
     background-color: aliceblue;
-    width: 250px;
+    /*width: 250px;*/
     margin: 20px;
     display: flex;
     align-items: flex-end;
-    gap: 5px;
+    gap: 10px;
     padding: 10px;
-    justify-content: center;
     border-radius: 10px;
-
+   
 }
+
 
 h6 {
-    
+
+
 transform: rotate(90deg);
 height: 20px;
+   
 }
 
-img [alt=""] {
+
+img [alt= ""] {
     height: 200px;
     border-radius: 10px;
 
+
 }
+
 
 li {
     list-style: none;
@@ -89,24 +120,37 @@ li {
     color: white;
     display: flex;
     justify-content: center;
+
+
 }
+   
+
+
+
 
 [id^='grafico'] {
- border-radius: 10px
+    border-radius: 10px;
 }
+
 
 a {
     text-decoration: none;
-    color: white; 
+    color: white;
 }
+
 
 iframe {
     border-radius: 20px;
+   
 }
+
+
+
+
 
 
 .porcentagem {
-    list-style: none;
+    list-style:none;
     padding: 0;
     margin: 0;
     display: flex;
@@ -116,10 +160,12 @@ iframe {
     color: #555;
     font-size: 14px;
 
+
 }
+
 
 .porcentagem_veiculo {
-    list-style: none;
+    list-style:none;
     padding: 0;
     margin: 0;
     display: flex;
@@ -128,7 +174,10 @@ iframe {
     height: 100%;
     color: #555;
     font-size: 14px;
+
+
 }
+
 
 #moto_grafico {
     display: flex;
@@ -138,7 +187,10 @@ iframe {
     height: 200px;
     justify-content: center;
     align-items: center;
+
+
 }
+
 
 #carro_grafico {
     display: flex;
@@ -148,7 +200,12 @@ iframe {
     height: 300px;
     justify-content: center;
     align-items: center;
+
+
 }
+
+
+
 
 #bmw_grafico {
     display: flex;
@@ -158,7 +215,10 @@ iframe {
     height: 100px;
     justify-content: center;
     align-items: center;
+
+
 }
+
 
 #toyota_grafico {
     display: flex;
@@ -168,7 +228,10 @@ iframe {
     height: 200px;
     justify-content: center;
     align-items: center;
+
+
 }
+
 
 #volkswagen_grafico {
     display: flex;
@@ -178,7 +241,10 @@ iframe {
     height: 300px;
     justify-content: center;
     align-items: center;
+
+
 }
+
 
 #honda_grafico {
     display: flex;
@@ -188,7 +254,10 @@ iframe {
     height: 250px;
     justify-content: center;
     align-items: center;
+
+
 }
+
 
 #x6_grafico {
     display: flex;
@@ -198,9 +267,12 @@ iframe {
     height: 100px;
     justify-content: center;
     align-items: center;
+
+
 }
 
-#civicg10_grafico {
+
+#civic_grafico {
     display: flex;
     background-color: #404AAE;
     width: 50px;
@@ -208,7 +280,10 @@ iframe {
     height: 200px;
     justify-content: center;
     align-items: center;
+
+
 }
+
 
 #corolla_grafico {
     display: flex;
@@ -218,7 +293,10 @@ iframe {
     height: 300px;
     justify-content: center;
     align-items: center;
+
+
 }
+
 
 #jetta_grafico {
     display: flex;
@@ -228,7 +306,10 @@ iframe {
     height: 250px;
     justify-content: center;
     align-items: center;
+
+
 }
+
 
 #adv_grafico {
     display: flex;
@@ -238,9 +319,12 @@ iframe {
     height: 100px;
     justify-content: center;
     align-items: center;
+
+
 }
 
-#pop100_grafico {
+
+#pop_grafico {
     display: flex;
     background-color: #404AAE;
     width: 50px;
@@ -248,9 +332,12 @@ iframe {
     height: 200px;
     justify-content: center;
     align-items: center;
+
+
 }
 
-#cg160_grafico {
+
+#cg_grafico {
     display: flex;
     background-color: #404AAE;
     width: 50px;
@@ -258,9 +345,12 @@ iframe {
     height: 300px;
     justify-content: center;
     align-items: center;
+
+
 }
 
-#gs1200_grafico {
+
+#gs_grafico {
     display: flex;
     background-color: #404AAE;
     width: 50px;
@@ -268,10 +358,154 @@ iframe {
     height: 400px;
     justify-content: center;
     align-items: center;
+
+
 }
 
-.gerar_relatorio{
+
+.gerar_relatorio {
     display: flex;
     justify-content: flex-end;
     margin: 0px 70px;
 }
+
+
+button[type="submit"] {
+    width: 300px;
+    padding: 10px 15px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+
+
+       
+       
+    }
+
+
+    h1 {
+        font-size: 15px;
+    }
+
+
+    .cabecalho {
+        height: 80px
+    }
+
+
+    .tipos {
+        height: 200px;
+    }
+
+
+    #moto_grafico {
+        height: 80px;
+    }
+
+
+    #carro_grafico {
+        height: 120px;
+    }
+
+
+    #bmw_grafico {
+        height: 40px
+    }
+
+
+    #toyota_grafico {
+        height: 80px
+    }
+
+
+    #volkswagen_grafico {
+        height: 120px;
+    }
+
+
+    #honda_grafico {
+        height: 100px;
+    }
+
+
+    #x6_grafico {
+        height: 40px;
+
+
+    }
+   
+
+
+    #civic_grafico {
+        height: 80px;
+
+
+    }
+
+
+    #corolla_grafico {
+        height: 120px;
+    }
+
+
+    #jetta_grafico {
+        height: 100px;
+    }
+
+
+    #adv_grafico {
+        height: 40px;
+    }
+
+
+    #pop_grafico {
+        height: 80px;
+    }
+
+
+    #cg_grafico {
+        height: 120px;
+    }
+
+
+    #gs_grafico {
+        height: 160px;
+    }
+
+
+    button[type="submit"] {
+        width: 200px;
+        font-size: 12px;
+    }
+
+
+    iframe {
+        height: 300px;
+        width: 300px;
+    }
+
+
+    [src="assets/images/cardapio.png"] {
+        width: 30px;
+        height: 30px;
+    }
+
+
+}
+
+
+
+
+
