@@ -1,10 +1,14 @@
 let nome = prompt("Digite seu nome: ")
 let sobrenome = prompt("Digite seu sobrenome: ")
-let data = new Date().toLocaleString("pt-BR", { datestyle: "full", timeStyle: "short" })
+let data = new Date().toLocaleString("pt-BR", { datestyle: "short",hour12: false })
 console.log(`Olá ${nome} ${sobrenome} hoje é ${data}. 67`)
+const semana = ["Domingo" , "Segunda-feira" , "Terça-feira" , "Quarta-feira" , "Quinta-feira" , "Sexta-feira" , "Sabado"]
+let dataAtual = new Date()
+const fuso_horario = dataAtual.getTimezoneOffset() / 60
+let horas = new Date().toLocaleDateString("pt-BR" , {hour: "2-digit", minute: "2-digit", hour12: "false" })
 
 
 setInterval(() => {
-    let BemVindoElement = document.getElementById("bem-vindo")
-    BemVindoElement.innerHTML = `Bem-Vindo, ${nome} ${sobrenome}! Hoje é ${data}.`
-},3*1000)
+    let bemVindoElement = document.getElementById("bem-vindo")
+    bemVindoElement.innerHTML = `Bem-Vindo, ${nome} ${sobrenome}! Hoje é  ${semana[new Date().getDay()]}, ${data}- ${horas} (-${fuso_horario}:00)`
+}, 3*1000)
