@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +7,25 @@
     <title>Esqueci minha senha</title>
 </head>
 <body>
-    <img src="assets/images/logo.png" alt="imagem-logo">
+    <div class="container">
+        <form action="index.html" method="get"></form>
+        <h1>Esqueceu sua senha?</h1>
+        <h3>Redefina a sua senha</h3>
+        
+        <label for="e_mail">Digite seu e-mail</label>
+        <input type="email" name="e_mail" id="e_mail" placeholder="67" required>
 
-    <h1> Esquenceu a Senha </h1>
-    <label for="email">Digite seu E-mail</label><br><br>
-    <input type="text" id="email" placeholder="Digite seu e-mail"><br><br>
+        <label for="senha_nova">Digite sua senha nova</label>
+        <input type="text" name="senha_nova" id="senha_nova" placeholder="22157" required>
 
-    <label for="novasenha">Digite sua Nova Senha</label><br><br>
-    <input type="text" id="novasenha" placeholder="Digite sua Nova Senha"><br><br>
+        <label for="senha_nova">Confirme a senha</label>
+        <input type="password" name="senha_nova" id="senha_nova" placeholder="22157" required>
 
-    <label for="csenha">Confirme sua Nova Senha</label><br><br>
-    <input type="password" id="csenha" placeholder="Confirme sua Nova Senha"><br><br>
+        <a href="index.html"><button>REDEFINIR</button></a>
 
-    <button type="submit">Redefinir</button>
-    
+    </div>
+
+
     <script src="assets/js/main.js"></script>
-
 </body>
 </html>
-

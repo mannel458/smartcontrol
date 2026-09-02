@@ -3,31 +3,25 @@
     padding: 0;
     box-sizing: border-box;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-   
-
+    
 
 }
-
-
 
 
 body{
     background-color: #202A42;
-   
-   
-}
 
+    
+}
 
 .container {
     gap: 30px;
     display: flex;
     justify-content: center;
     margin: 100;
-   
-
+    
 
 }
-
 
 .local {
     justify-content: end;
@@ -37,7 +31,6 @@ body{
     padding: 20px;
 }
 
-
 .logo {
     width: 40px;
     height: 40px;
@@ -45,19 +38,15 @@ body{
     display: flex;
 }
 
-
 [src="assets/images/cardapio.png"] {
     position: absolute;
     left: 30px;
     width: 80px;
     height: 50px;
-   
-   
-   
+    
+    
+    
 }
-
-
-
 
 
 
@@ -70,7 +59,6 @@ body{
     justify-content: center;
 }
 
-
 h1 {
     margin: 0;
     font-size: 36px;
@@ -79,11 +67,8 @@ h1 {
 
 
 
-
-
-
 .tipos {
-   
+    
     height: 500px;
     background-color: aliceblue;
     /*width: 250px;*/
@@ -93,26 +78,21 @@ h1 {
     gap: 10px;
     padding: 10px;
     border-radius: 10px;
-   
+    
 }
-
 
 h6 {
 
-
 transform: rotate(90deg);
 height: 20px;
-   
+    
 }
-
 
 img [alt= ""] {
     height: 200px;
     border-radius: 10px;
 
-
 }
-
 
 li {
     list-style: none;
@@ -121,31 +101,23 @@ li {
     display: flex;
     justify-content: center;
 
-
 }
-   
-
-
+    
 
 
 [id^='grafico'] {
     border-radius: 10px;
 }
 
-
 a {
     text-decoration: none;
     color: white;
 }
 
-
 iframe {
     border-radius: 20px;
-   
+    
 }
-
-
-
 
 
 
@@ -160,9 +132,7 @@ iframe {
     color: #555;
     font-size: 14px;
 
-
 }
-
 
 .porcentagem_veiculo {
     list-style:none;
@@ -175,9 +145,7 @@ iframe {
     color: #555;
     font-size: 14px;
 
-
 }
-
 
 #moto_grafico {
     display: flex;
@@ -188,9 +156,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #carro_grafico {
     display: flex;
@@ -201,10 +167,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
-
 
 
 #bmw_grafico {
@@ -216,9 +179,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #toyota_grafico {
     display: flex;
@@ -229,9 +190,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #volkswagen_grafico {
     display: flex;
@@ -242,9 +201,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #honda_grafico {
     display: flex;
@@ -255,9 +212,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #x6_grafico {
     display: flex;
@@ -268,9 +223,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #civic_grafico {
     display: flex;
@@ -281,9 +234,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #corolla_grafico {
     display: flex;
@@ -294,9 +245,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #jetta_grafico {
     display: flex;
@@ -307,9 +256,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #adv_grafico {
     display: flex;
@@ -320,9 +267,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #pop_grafico {
     display: flex;
@@ -333,9 +278,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #cg_grafico {
     display: flex;
@@ -346,9 +289,7 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 #gs_grafico {
     display: flex;
@@ -359,16 +300,13 @@ iframe {
     justify-content: center;
     align-items: center;
 
-
 }
-
 
 .gerar_relatorio {
     display: flex;
     justify-content: flex-end;
     margin: 0px 70px;
 }
-
 
 button[type="submit"] {
     width: 300px;
@@ -383,129 +321,113 @@ button[type="submit"] {
     font-size: 16px;
 }
 
-
 @media (max-width: 768px) {
     .container {
         display: flex;
         flex-wrap: wrap;
 
-
-       
-       
+        
+        
     }
-
 
     h1 {
         font-size: 15px;
     }
 
-
     .cabecalho {
         height: 80px
     }
-
 
     .tipos {
         height: 200px;
     }
 
-
     #moto_grafico {
         height: 80px;
     }
-
 
     #carro_grafico {
         height: 120px;
     }
 
-
     #bmw_grafico {
         height: 40px
     }
-
 
     #toyota_grafico {
         height: 80px
     }
 
-
     #volkswagen_grafico {
         height: 120px;
     }
-
 
     #honda_grafico {
         height: 100px;
     }
 
-
     #x6_grafico {
         height: 40px;
 
-
     }
-   
-
+    
 
     #civic_grafico {
         height: 80px;
 
-
     }
-
 
     #corolla_grafico {
         height: 120px;
     }
 
-
     #jetta_grafico {
         height: 100px;
     }
-
 
     #adv_grafico {
         height: 40px;
     }
 
-
     #pop_grafico {
         height: 80px;
     }
-
 
     #cg_grafico {
         height: 120px;
     }
 
-
     #gs_grafico {
         height: 160px;
     }
-
 
     button[type="submit"] {
         width: 200px;
         font-size: 12px;
     }
 
-
     iframe {
         height: 300px;
         width: 300px;
     }
-
 
     [src="assets/images/cardapio.png"] {
         width: 30px;
         height: 30px;
     }
 
-
 }
 
+#campo_busca {
+    height: 50px;
+    width: 100px;
+    
+}
 
+body.modo-escuro {
+    background-color: black;
+}
 
-
-
+body.modo-escuro .cabecalho {
+    background-color: chartreuse;
+}
