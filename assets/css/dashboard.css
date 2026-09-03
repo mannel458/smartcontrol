@@ -10,7 +10,7 @@
 
 body{
     background-color: #202A42;
-
+    
     
 }
 
@@ -38,6 +38,57 @@ body{
     display: flex;
 }
 
+.menu {
+    margin-top: 10px;
+    right: 0;
+}
+
+.menu_opcoes {
+    display: none;
+    min-width: 170px;
+    padding: 8px auto;
+    background-color: pink;
+    border-radius: 10px;
+    list-style: none;
+    text-align: center;
+    border: 2px solid white;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+#btnMenu {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 10px;
+    background-color: black;
+    padding: 10px;
+}
+
+.link {
+    margin: 10px;
+}
+
+.menu_opcoes a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu_opcoes.show {
+    display: block;
+}
+
+
+
+
+
+
 [src="assets/images/cardapio.png"] {
     position: absolute;
     left: 30px;
@@ -57,12 +108,15 @@ body{
     position: relative;
     align-items: center;
     justify-content: center;
+    align-items: center;
+    padding: 50px;
 }
 
 h1 {
     margin: 0;
     font-size: 36px;
     color:white;
+
 }
 
 
@@ -418,11 +472,14 @@ button[type="submit"] {
 
 }
 
-#campo_busca {
-    height: 50px;
-    width: 100px;
-    
+.input_pesquise {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column-reverse;
 }
+    
+    
+
 
 body.modo-escuro {
     background-color: black;
