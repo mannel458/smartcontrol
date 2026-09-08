@@ -2,53 +2,72 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>catalogo</title>
-      <link rel="stylesheet" href="assets/css/cadastro.css">
+    <title>Catálogo</title>
+    <link rel="stylesheet" href="assets/css/catalogo.css">
 </head>
+
 <body>
-    <div class="carros">
-        <form action="index.html" method="get"></form>
-        <h1>CATÁLOGO</h1>
-        <h3>Confira os veículos disponíveis</h3>
-        <div class="catalogo">
-            <div class="carro">
-                <img src="assets/images/carro1.jpg" alt="carro1">
-                <h4>Carro 1</h4>
-                <p>Descrição do carro 1</p>
-            </div>
-            <div class="carro">
-                <img src="assets/images/carro2.jpg" alt="carro2">
-                <h4>Carro 2</h4>
-                <p>Descrição do carro 2</p>
-            </div>
-            <div class="carro">
-                <img src="assets/images/carro3.jpg" alt="carro3">
-                <h4>Carro 3</h4>
-                <p>Descrição do carro 3</p>
-            </div>
-             <div class="carro">
-                <img src="assets/images/carro4.jpg" alt="carro4">
-                <h4>Carro 4</h4>
-                <p>Descrição do carro 4</p>
-            </div>
 
-        <div class="Voltar">
-            <a href="index.html">Voltar</a>
+    <div class="container">
+
+        <div class="header">
+            <h1>VEÍCULOS</h1>
         </div>
 
-        <div class="Gerenciamento">
-        <button type="submit">+ GERENCIAMENTO DE VENDAS</button>
-        </div>
+        <div class="carros">
 
-        <div class="Atualizar veiculos">
-            <button type="submit">ATUALIZAR VEÍCULOS</button>
-            <input type="text" name="atualizar_veiculos" id="atualizar_veiculos" placeholder="Digite o nome do veículo que deseja atualizar" required><br><br>
-        </div>
+            <h1>CATÁLOGO</h1>
+            <h3>Confira os veículos disponíveis</h3>
 
-        <div class="Excluir veiculos">
-            <button type="submit">EXCLUIR VEÍCULOS</button>
+            <div class="catalogo">
+
+                <div class="card1">
+                    <img src="assets/imagens/carro1.jpg" alt="Carro 1">
+                    <h4>Volkswagen Jetta</h4>
+                    <p>Descrição do carro 1</p>
+                </div>
+
+                <div class="card2">
+                    <img src="assets/imagens/carro2.jpg" alt="Carro 2">
+                    <h4>MW R 1200 GS </h4>
+                    <p>Descrição do carro 2</p>
+                </div>
+
+                <div class="card3">
+                    <img src="assets/imagens/carro3.jpg" alt="Carro 3">
+                    <h4>Toyota Corolla</h4>
+                    <p>Descrição do carro 3</p>
+                </div>
+
+                <div class="card4">
+                    <img src="assets/imagens/carro4.jpg" alt="Carro 4">
+                    <h4>Honda CG 160 Titan</h4>
+                    <p>Descrição do carro 4</p>
+                </div>
+
+            </div>
+
+            <div class="Voltar">
+                <a href="index.html">Voltar</a>
+            </div>
+
+            <div class="Gerenciamento">
+                <button type="submit">+ GERENCIAMENTO DE VENDAS</button>
+            </div>
+
+            <div class="Atualizar">
+                <button type="submit">ATUALIZAR VEÍCULOS</button>
+            </div>
+
+            <div class="Excluir">
+                <button type="submit">EXCLUIR VEÍCULOS</button>
+                <input type="text" name="excluir_veiculos" id="excluir_veiculos" placeholder="Digite o nome do veículo que deseja excluir">
+            </div>
+
         </div>
 
     </div>
+
+</body>
+</html>
