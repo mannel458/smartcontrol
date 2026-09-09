@@ -30,7 +30,7 @@
 
                 <div class="card2">
                     <img src="assets/imagens/carro2.jpg" alt="Carro 2">
-                    <h4>MW R 1200 GS </h4>
+                    <h4>MW R 1200 GS</h4>
                     <p>Descrição do carro 2</p>
                 </div>
 
@@ -53,21 +53,57 @@
             </div>
 
             <div class="Gerenciamento">
-                <button type="submit">+ GERENCIAMENTO DE VENDAS</button>
+                <button type="button">+ GERENCIAMENTO DE VENDAS</button>
             </div>
 
             <div class="Atualizar">
-                <button type="submit">ATUALIZAR VEÍCULOS</button>
+                <button type="button">ATUALIZAR VEÍCULOS</button>
             </div>
 
             <div class="Excluir">
-                <button type="submit">EXCLUIR VEÍCULOS</button>
-                <input type="text" name="excluir_veiculos" id="excluir_veiculos" placeholder="Digite o nome do veículo que deseja excluir">
+                <button type="button" onclick="excluirVeiculo()">EXCLUIR VEÍCULO</button>
+
+                <input
+                    type="text"
+                    id="excluir_veiculos"
+                    placeholder="Digite o nome do veículo que deseja excluir"
+                >
             </div>
 
         </div>
 
     </div>
+
+    <script>
+        function excluirVeiculo() {
+            const nome = document.getElementById("excluir_veiculos").value.trim().toLowerCase();
+
+            const cards = document.querySelectorAll(".catalogo > div");
+
+            if (nome === "") {
+                alert("Digite o nome do veículo.");
+                return;
+            }
+
+            let encontrado = false;
+
+            cards.forEach(card => {
+                const titulo = card.querySelector("h4").textContent.trim().toLowerCase();
+
+                if (titulo === nome) {
+                    card.remove();
+                    encontrado = true;
+                }
+            });
+
+            if (encontrado) {
+                alert("Veículo excluído com sucesso.");
+                document.getElementById("excluir_veiculos").value = "";
+            } else {
+                alert("Veículo não encontrado.");
+            }
+        }
+    </script>
 
 </body>
 </html>
