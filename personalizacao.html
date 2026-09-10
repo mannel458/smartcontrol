@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização Pedido</title>
+    <link rel="stylesheet" href="assets/css/personalizacao.css">
+</head>
+<body>
+
+     <nav>
+        <div class="cabecalho">
+            
+            <h1>GERENCIAMENTO DE VENDAS</h1>
+            
+            <div class="menu">
+                <button class="btn btn-secondary dropdown-toggle" id="btnMenu" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fa-solid fa-bars" style="color: rgb(255, 255, 255);"></i>
+                </button>
+                <ul class="dropdown-menu menu_opcoes">
+                    <li class="link"><a href="index.html">Perfil</a></li>
+                    <li class="link"><a href="#">link 2</a></li>
+                    <input id="btn-temas" type="button" value="ALTERAR TEMA" onclick="toggleView(this)">
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<div class="imagem"
+     img src="assets/imagens/personalizacao.jpg" alt="Imagem de Personalização">
+</div>
+
+    <div class="container"></div>
+
+    <div class="personalizacao">
+        <h1>Personalização do Pedido</h1>
+        <p>Escolha as opções de personalização para o seu pedido:</p>
+
+        <form action="index.html" method="get">
+            <label for="quantidade">Quantidade:</label>
+            <select name="quantidade" id="quantidade">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+                
+            </select><br><br>
+
+            <label for="tamanho">Refrigerante:</label>
+            <select name="tamanho" id="tamanho">
+                <option value="Antartica">Antartica</option>
+                <option value="Fanta">Fanta</option>
+                <option value="coca-cola">Coca-Cola</option>
+                <option value="guarana">Guaraná</option>
+                <option value="Tropical">Tropical</option>
+                <option value="IT">IT</option>
+            </select><br><br>
+
+            <label for="tamanhorefrigerante">Tamanho do Refrigerante:</label>
+            <select name="tamanhorefrigerante" id="tamanhorefrigerante">
+                <option value="300ml">300ML</option>
+                <option value="600ml">600ML</option>
+                <option value="1litro">1 Litro</option>
+                <option value="2litros">2 Litros</option>
+            </select><br><br>
+
+            <label for="Adicionais">Adicionais:</label><br>
+            <select name="adicionais" id="adicionais" multiple>
+                <option value="carne">Carne extra</option>
+                <option value="molho">Molho extra</option>
+                <option value="queijo">Queijo extra</option>
+                <option value="bacon">Bacon extra</option>
+                <option value="alface">Alface extra</option>
+                <option value="tomate">Tomate extra</option>
+                <option value="cebola">Cebola extra</option>
+                <option value="picles">Picles extra</option>
+                <option value="ovo">Ovo extra</option>
+            </select><br><br>
+
+            <label for="Marca refrigerante">Marca do Refrigerante:</label>
+            <select name="marca_refrigerante" id="marca_refrigerante">
+                <option value="Coca-Cola">Coca-Cola</option>
+                <option value="Pepsi">Pepsi</option>
+                <option value="Fanta">Fanta</option>
+                <option value="Guaraná">Guaraná</option>
+                <option value="Sprite">Sprite</option>
+                <option value="Antartica">Antartica</option>
+                <option value="Tropical">Tropical</option>
+                <option value="IT">IT</option>
+            </select><br><br>
+
+            <label for="observacoes">Observações:</label><br>
+            <textarea name="observacoes" id="observacoes" rows="4" cols="50" placeholder="Digite suas observações aqui..."></textarea><br><br>
+
+            <button type="submit">Finalizar Pedido</button>
+            <button type="submit">Cancelar pedido</button>
+        </form>
+    <div class="Entrar">
+                <button type="button" onclick="window.location.href='index.html'">Entrar</button>
+            </div>
+        <div class="info">
+            <p>Os preços, formas de pagamento e de retirada podem variar de acordo com cada Restaurante. Oferta composta por: 1 (um)
+                 sanduíche McChicken, 1 (uma) McFritas média, 1 (um) sundae (calda chocolate ou morango) e 1 (uma) bebida Refil, servido no copo de 400ml. 
+                 Itens adicionais ou substituições serão cobrados à parte. ** Para acumular pontos, é necessário estar cadastrado no Meu Méqui. O resgate de produtos é válido 
+                 apenas via McDelivery e Peça e Retire do App McDonalds. Saiba mais em: https://cloud.news.mcdonalds.com.br/meu-mequi.
+                  Promoção não cumulativa e não válida no McDia Feliz</p>
+
+        </div>
+    </div>
+    
+    
+</body>
+</html>
